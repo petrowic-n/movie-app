@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Movie App</title>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="container">
+        <div class="logo">
+          <i class="bx bx-movie-play"></i>
+        </div>
+
+        <div class="header__user">
+          <span id="total">Total spent: $0</span>
+        </div>
+      </div>
+    </header>
+
+    <!-- main section -->
+    <main>
+      <section class="hero">
+        <!-- Movie Text -->
+        <div class="container">
+          <div class="movie__text">
+            <h1 class="movie__title">Choose Your Movie</h1>
+            <p class="movie__description">Click on watch button to buy it.</p>
+            <span id="price" class="price"></span>
+            <button class="btn buy__button" onclick="buyMovie()">Watch</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="movie__cards">
+        <div class="container">
+          <div class="movie__card-wrapper">
+            <!-- card 1 -->
+            <div class="movie__card">
+              <img src="assets/batman-vs-superman.webp" />
+              <button class="btn watch-button" data-id="1">See More</button>
+            </div>
+
+            <!-- card 2 -->
+            <div class="movie__card">
+              <img src="assets/venom.webp" />
+              <button class="btn watch-button" data-id="2">See More</button>
+            </div>
+
+            <!-- card 3 -->
+            <div class="movie__card">
+              <img src="assets/money-heist.jpg" />
+              <button class="btn watch-button" data-id="3">See More</button>
+            </div>
+
+            <!-- card 4 -->
+            <div class="movie__card">
+              <img src="assets/peaky-blinders.jpg" />
+              <button class="btn watch-button" data-id="4">See More</button>
+            </div>
+
+            <!-- card 5 -->
+            <div class="movie__card">
+              <img src="assets/spider-man.webp" />
+              <button class="btn watch-button" data-id="8">See More</button>
+            </div>
+
+            <!-- card 6 -->
+            <div class="movie__card">
+              <img src="assets/flash.webp" />
+              <button class="btn watch-button" data-id="5">See More</button>
+            </div>
+
+            <!-- card 7 -->
+            <div class="movie__card">
+              <img src="assets/prison-break.webp" />
+              <button class="btn watch-button" data-id="6">See More</button>
+            </div>
+
+            <!-- card 8 -->
+            <div class="movie__card">
+              <img src="assets/avatar.jpg" />
+              <button class="btn watch-button" data-id="7">See More</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
